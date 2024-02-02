@@ -1,0 +1,15 @@
+[Desktop Action send-via-64gram]
+
+Exec=/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=telegram-desktop --file-forwarding io.github.tdesktop_x64.TDesktop -sendpath @@ %f @@
+
+Name=Send via 64Gram
+Icon=io.github.tdesktop_x64.TDesktop
+
+[Desktop Entry]
+Actions=send-via-64gram
+
+MimeType=application/octet-stream;
+
+ServiceTypes=KonqPopupMenu/Plugin
+Type=Service
+X-KDE-Priority=TopLevel
